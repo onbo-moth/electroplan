@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0",
+    "node-fetch": "^2.6.7"
+  }
+}

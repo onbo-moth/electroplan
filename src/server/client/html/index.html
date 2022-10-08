@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html, body {
+      height: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      overflow: hidden
+    }
+
+    .container {
+      height: 90%;
+      width: 100%;
+    }
+
+    .wrapper {
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -60%);
+    }
+
+    .center-plan {
+      display: table-cell;
+      
+      width: 800px;
+      height: 600px;
+      
+
+      background-color: #6495ed;
+      border: 1px solid black;
+    }
+
+    .title{
+      height: 15%;
+      width: 100%;
+
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+      background-color: #8baeee;
+      border: 1px solid black;
+    }
+
+    .table {
+      height: auto;
+      width: 100%;
+
+      text-align: center;
+      vertical-align: auto;
+
+    }
+
+    .document-wide-footer {
+      padding-top: 10px;
+      height: 10%;
+      flex: 0 0 auto;
+      text-align: center;
+      background-color: #3c63ac;
+      border: 1px solid black;
+    }
+
+    table {
+      margin-top: 20px;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table, tbody, td, th {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: white;
+
+      font-size: 14px;
+    }
+
+    .table-nr {
+      width: 20px;
+      background-color: #3c63ac;
+    }
+
+    .table-hour {
+      width: 60px;
+      background-color: #7b95c4;
+    }
+
+    .table-lesson {
+      width: 100px;
+    }
+
+    .table-color {
+      background-color: #3c63ac;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="center-plan">
+        <div class="title">
+          <h1 id="classname">CLASS</h1>
+        </div>
+        <div class="table">
+          <!-- there will be table :) -->
+          <table>
+            <tbody id="table">
+              <tr>
+                <td class="table-color table-nr">Nr.</td>
+                <td class="table-color table-hour">Godz.</td>
+                <td class="table-color table-lesson">Poniedziałek</td>
+                <td class="table-color table-lesson">Wtorek</td>
+                <td class="table-color table-lesson">Środa</td>
+                <td class="table-color table-lesson">Czwartek</td>
+                <td class="table-color table-lesson">Piątek</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="document-wide-footer">
+     <select name="clssselect" id="classselect"></select>
+  </footer>
+  <script src="/js/main.js"></script>
+</html>
